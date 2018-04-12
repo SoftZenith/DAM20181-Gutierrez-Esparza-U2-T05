@@ -1,0 +1,38 @@
+<ion-list>
+     <ion-item>
+           Resultados
+     </ion-item>
+
+     <ion-card *ngIf="sexo">
+       <ion-card-header>
+         Eres hombre
+       </ion-card-header>
+       <ion-card-content>
+         <ion-list>
+             <button ion-item>Bigote</button>
+             <button ion-item>Barba</button>
+             <button ion-item>Feo</button>
+             <button ion-item>Fuerte</button>
+             <button ion-item>Formal</button>
+         </ion-list>
+       </ion-card-content>
+     </ion-card>
+
+    <ion-card *ngIf="!sexo">
+        <ion-card-header>
+              Eres mujer
+        </ion-card-header>
+        <ion-card-content>
+            <ion-list>
+                <button ion-item>Bonita</button>
+                <button ion-item>Cabello largo</button>
+                <button ion-item>Inteligente</button>
+            </ion-list>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-item>
+        <button ion-button (click)="regresar()">Regresar atras</button>
+    </ion-item>
+
+</ion-list>
